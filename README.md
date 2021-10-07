@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Notes Regarding the Application:
+
+After running npm install,
+Application can be deployed locally by using "serve -s build", once "npm i -g serve" command is performed.
+
+### Project Architecture:
+
+To make the project simpler,
+
+In Src folder,
+
+"common" folder contains common components and colors file in which all the colors that are defined by the organization are maintained, and can be utilized across the application.
+
+"container" folder contains the components along with their styling classes, and test files.
+
+"fonts" folder contains the font family files.
+
+"services" folder contains the config file(contains baseURL for now), and services
+files in which API related operations are performed. The API used to fetch user information is obtained from "https://randomuser.me/".
+
+
